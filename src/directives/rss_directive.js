@@ -21,7 +21,7 @@
             '<div>'+
                 '<div ng-repeat="rss in feeds">' +
                     '<div> title: {{rss.title}}</div>'+
-                '<div> body: {{rss.author}}</div>'+
+                '<div> contentSnippet: {{rss.contentSnippet}}</div>'+
                 '<div ng-show="base.feedDate"> date: {{rss.publishedDate}} </div>'+
                     '<div> -------------------------------</div>'+
                 '</div>',
@@ -31,7 +31,6 @@
                 scope.loadButonText="Load";
                 scope.getRss=function(e){
                     rssFactory.parseFeed(scope.main.feeds).then(function(res){
-                        debugger;
                         var feeds =res.data.responseData.feed.entries;
                         scope.feeds=feeds.slice(0,scope.main.feedsNumber);
                     });
