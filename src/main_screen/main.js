@@ -7,6 +7,6 @@
         .controller("mainController",["$scope",mainController]);
 
     function mainController(){
-
+        this.feedsNumber = 5;
     }
 }());
