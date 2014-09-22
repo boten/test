@@ -6,4 +6,6 @@ pls run
 
 on main project folder run : grunt serve
 
- go to http://localhost:8080/#/ and play:)
+ go to http://localhost:8080/#/ and enter url to get rss from
+
+ url example :  http://news.ycombinator.com/rss
